@@ -7,7 +7,7 @@
  * @since      0.1.0
  *
  * @package    Insert_Code_Lite
- * @subpackage Insert_Code_Lite/includes
+ * @subpackage Insert_Code_Lite/public
  */
 
 /**
@@ -17,7 +17,7 @@
  * enqueue the dashboard-specific stylesheet and JavaScript.
  *
  * @package    Insert_Code_Lite
- * @subpackage Insert_Code_Lite/admin
+ * @subpackage Insert_Code_Lite/public
  * @author     Dmitry Mayorov
  */
 class Insert_Code_Lite_Public {

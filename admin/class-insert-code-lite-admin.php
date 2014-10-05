@@ -7,7 +7,7 @@
  * @since      0.1.0
  *
  * @package    Insert_Code_Lite
- * @subpackage Insert_Code_Lite/includes
+ * @subpackage Insert_Code_Lite/admin
  */
 
 /**
