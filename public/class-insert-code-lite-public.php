@@ -55,23 +55,11 @@ class Insert_Code_Lite_Public {
 	}
 
 	/**
-	 * Register the stylesheets for the public-facing side of the site.
+	 * Print code to 'head' section.
 	 *
 	 * @since    0.1.0
 	 */
 	public function print_header_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Plugin_Name_Public_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Plugin_Name_Public_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		$value = get_option( 'iclp_code' );
 		$value = $value['header_scripts'];
@@ -83,23 +71,11 @@ class Insert_Code_Lite_Public {
 
 
 	/**
-	 * Register the stylesheets for the public-facing side of the site.
+	 * Print code before closing 'body' tag.
 	 *
 	 * @since    0.1.0
 	 */
 	public function print_footer_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Plugin_Name_Public_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Plugin_Name_Public_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		$value = get_option( 'iclp_code' );
 		$value = $value['footer_scripts'];
