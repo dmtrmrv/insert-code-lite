@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-10-06 01:30+0600\n"
+"PO-Revision-Date: 2014-10-06 01:39+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.6.9\n"
@@ -20,11 +20,11 @@ msgstr ""
 msgid ""
 "Will be printed within the <code>&#60;head&#62;&#60;/head&#62;</code> "
 "section."
-msgstr "Будет выведен внутри тэга <code>&#60;head&#62;&#60;/head&#62;</code>."
+msgstr "Будет выведен внутри тега <code>&#60;head&#62;&#60;/head&#62;</code>."
 
 #: admin/class-insert-code-lite-admin.php:121
 msgid "Will be printed before closing <code>&#60;/body&#62;</code> tag."
-msgstr "Будет выведен перед закрывающим тэгом <code>&#60;/body&#62;</code>."
+msgstr "Будет выведен перед закрывающим тегом <code>&#60;/body&#62;</code>."
 
 #. Plugin Name of the plugin/theme
 msgid "Insert Code Lite"
