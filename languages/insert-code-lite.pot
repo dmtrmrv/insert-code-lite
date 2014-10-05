@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Insert Code Lite 0.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/insert-code-lite\n"
-"POT-Creation-Date: 2014-09-14 20:45:26+00:00\n"
+"POT-Creation-Date: 2014-10-05 18:59:31+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,7 +41,9 @@ msgid "Will be printed before closing <code>&#60;/body&#62;</code> tag."
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Insert custom code to header and/or footer of your theme."
+msgid ""
+"With Insert Code Lite you can add tracking scripts, CSS styles, meta tags "
+"or other code to your website without editing your theme."
 msgstr ""
 
 #. Author of the plugin/theme
