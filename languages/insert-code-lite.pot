@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Insert Code Lite 0.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/insert-code-lite\n"
-"POT-Creation-Date: 2014-10-05 18:59:31+00:00\n"
+"POT-Creation-Date: 2014-10-05 19:19:27+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,31 +13,18 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.4.8\n"
 
-#. Plugin Name of the plugin/theme
-msgid "Insert Code Lite"
-msgstr ""
-
-#: admin/class-insert-code-lite-admin.php:66
-#: admin/partials/insert-code-lite-admin-display.php:18
-msgid "Insert Code"
-msgstr ""
-
-#: admin/class-insert-code-lite-admin.php:103
-msgid "Header"
-msgstr ""
-
 #: admin/class-insert-code-lite-admin.php:109
 msgid ""
 "Will be printed within the <code>&#60;head&#62;&#60;/head&#62;</code> "
 "section."
 msgstr ""
 
-#: admin/class-insert-code-lite-admin.php:115
-msgid "Footer"
-msgstr ""
-
 #: admin/class-insert-code-lite-admin.php:121
 msgid "Will be printed before closing <code>&#60;/body&#62;</code> tag."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Insert Code Lite"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -52,4 +39,29 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "http://dmitrymayorov.com/"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:65
+msgctxt "Plugin name in a browser page title."
+msgid "Insert Code"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:66
+msgctxt "Plugin name in a dashboard menu."
+msgid "Insert Code"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:103
+msgctxt "Meaning 'head' section of the site."
+msgid "Header"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:115
+msgctxt "Meaning the section of the site before closing 'body' tag."
+msgid "Footer"
+msgstr ""
+
+#: admin/partials/insert-code-lite-admin-display.php:18
+msgctxt "Name of the plugin on the admin dashboard page."
+msgid "Insert Code"
 msgstr ""

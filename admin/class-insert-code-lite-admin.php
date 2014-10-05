@@ -62,8 +62,8 @@ class Insert_Code_Lite_Admin {
 	public function add_menu_page() {
 		add_submenu_page(
 			'options-general.php',
-			__( 'Insert Code Lite', 'insert-code-lite' ),
-			__( 'Insert Code', 'insert-code-lite' ),
+			_x( 'Insert Code', 'Plugin name in a browser page title.', 'insert-code-lite' ),
+			_x( 'Insert Code', 'Plugin name in a dashboard menu.', 'insert-code-lite' ),
 			'activate_plugins',
 			'iclp_code',
 			array( $this, 'render_plugin_admin_page' )
@@ -100,7 +100,7 @@ class Insert_Code_Lite_Admin {
 		
 		add_settings_field(
 			'header_scripts',
-			__( 'Header', 'insert-code-lite' ),
+			_x( 'Header', 'Meaning \'head\' section of the site.', 'insert-code-lite' ),
 			array( $this, 'display_field' ), 
 			'iclp_code', 
 			'iclp_code',
@@ -112,7 +112,7 @@ class Insert_Code_Lite_Admin {
 
 		add_settings_field(
 			'footer_scripts',
-			__( 'Footer', 'insert-code-lite' ),
+			_x( 'Footer', 'Meaning the section of the site before closing \'body\' tag.', 'insert-code-lite' ),
 			array( $this, 'display_field' ), 
 			'iclp_code', 
 			'iclp_code',
