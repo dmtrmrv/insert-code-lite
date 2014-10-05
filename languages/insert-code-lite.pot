@@ -1,0 +1,53 @@
+# Copyright (C) 2014 Dmitry Mayorov
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Insert Code Lite 0.1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/insert-code-lite\n"
+"POT-Creation-Date: 2014-09-14 20:45:26+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.8\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Insert Code Lite"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:66
+#: admin/partials/insert-code-lite-admin-display.php:18
+msgid "Insert Code"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:103
+msgid "Header"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:109
+msgid ""
+"Will be printed within the <code>&#60;head&#62;&#60;/head&#62;</code> "
+"section."
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:115
+msgid "Footer"
+msgstr ""
+
+#: admin/class-insert-code-lite-admin.php:121
+msgid "Will be printed before closing <code>&#60;/body&#62;</code> tag."
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Insert custom code to header and/or footer of your theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Dmitry Mayorov"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://dmitrymayorov.com/"
+msgstr ""
