@@ -16,7 +16,7 @@
  * Plugin Name:       Insert Code Lite
  * 
  * Description:       With Insert Code Lite you can add tracking scripts, CSS styles, meta tags or other code to your website without editing your theme.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            Dmitry Mayorov
  * Author URI:        http://dmitrymayorov.com/
  * License:           GPL-2.0+
