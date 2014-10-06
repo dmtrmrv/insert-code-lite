@@ -46,8 +46,9 @@ You don't want to put things like tracking code inside your theme because if you
 
 * Added README.md
 * Added assets folder
+* Added 128px icon
 * Added Russian translation
-* Minor improvements
+* Minor code improvements
 
 **0.1.0**
 
