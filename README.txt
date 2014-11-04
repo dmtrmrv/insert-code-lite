@@ -54,4 +54,8 @@ You don't want to put things like tracking code inside your theme because if you
 == Changelog ==
 
 = 0.1.0 =
+Added Russian translation
+Minor code improvements
+
+= 0.1.0 =
 Initial Release
