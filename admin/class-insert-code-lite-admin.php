@@ -25,27 +25,27 @@ class Insert_Code_Lite_Admin {
 	/**
 	 * The ID of this plugin.
 	 *
-	 * @since    0.1.0
-	 * @access   private
-	 * @var      string    $name    The ID of this plugin.
+	 * @since 0.1.0
+	 * @access private
+	 * @var    string  $name The ID of this plugin.
 	 */
 	private $name;
 
 	/**
 	 * The version of this plugin.
 	 *
-	 * @since    0.1.0
-	 * @access   private
-	 * @var      string    $version    The current version of this plugin.
+	 * @since  0.1.0
+	 * @access private
+	 * @var    string  $version The current version of this plugin.
 	 */
 	private $version;
 
 	/**
 	 * Initialize the class and set its properties.
 	 *
-	 * @since    0.1.0
-	 * @var      string    $name       The name of this plugin.
-	 * @var      string    $version    The version of this plugin.
+	 * @since 0.1.0
+	 * @var   string $name    The name of this plugin.
+	 * @var   string $version The version of this plugin.
 	 */
 	public function __construct( $name, $version ) {
 
@@ -57,7 +57,7 @@ class Insert_Code_Lite_Admin {
 	/**
 	 * Create menu item.
 	 *
-	 * @since    0.1.0
+	 * @since 0.1.0
 	 */
 	public function add_menu_page() {
 		add_submenu_page(
@@ -73,7 +73,7 @@ class Insert_Code_Lite_Admin {
 	/**
 	 * Render admin page.
 	 * 
-	 * @since    0.1.0
+	 * @since 0.1.0
 	 */
 	public function render_plugin_admin_page() {
 		require_once plugin_dir_path( __FILE__ ) . 'partials/insert-code-lite-admin-display.php';
@@ -82,7 +82,7 @@ class Insert_Code_Lite_Admin {
 	/**
 	 * Initialize admin page.
 	 * 
-	 * @since    0.1.0
+	 * @since 0.1.0
 	 */
 	public function admin_init() {
 		register_setting(
@@ -106,7 +106,7 @@ class Insert_Code_Lite_Admin {
 			'iclp_code',
 			array(
 				'name' => 'header_scripts',
-				'desc' => __( 'Will be printed within the <code>&#60;head&#62;&#60;/head&#62;</code> section.', 'insert-code-lite' )
+				'desc' => sprintf( _x( 'Will be printed within the %s section.', '\'head\'', '<code>' . esc_html( '<head></head>' ) . '</code>' ), 'insert-code-lite' ),
 			)
 		);
 
@@ -114,11 +114,11 @@ class Insert_Code_Lite_Admin {
 			'footer_scripts',
 			_x( 'Footer', 'Meaning the section of the site before closing \'body\' tag.', 'insert-code-lite' ),
 			array( $this, 'display_field' ), 
-			'iclp_code', 
+			'iclp_code',
 			'iclp_code',
 			array(
 				'name' => 'footer_scripts',
-				'desc' => __( 'Will be printed before closing <code>&#60;/body&#62;</code> tag.', 'insert-code-lite' )
+				'desc' => sprintf( _x( 'Will be printed before closing %s tag.', '\'body\'', '<code>' . esc_html( '</body>' ) . '</code>' ), 'insert-code-lite' ),
 			)
 		);
 	}
@@ -126,28 +126,15 @@ class Insert_Code_Lite_Admin {
 	/**
 	 * Sanitize option value.
 	 * 
-	 * @since    0.1.0
+	 * @since 0.1.0
 	 */
 	public function sanitize( $input ) {
-		$output = array(
-			'header_scripts' => '',
-			'footer_scripts' => ''
-		);
-
 		if ( isset( $input ) && is_array( $input ) ) {
 			foreach ( $input as $k => $v ) {
-				switch ( $k ) {
-					case 'header_scripts':
-					case 'footer_scripts':
-						if ( current_user_can( 'unfiltered_html' ) )
-							$output[ $k ] = $v;
-						else
-							$output[ $k ] = wp_kses_post( $v );
-						break;
-					
-					default:
-						break;
-				}
+				if ( current_user_can( 'unfiltered_html' ) )
+					$output[ $k ] = $v;
+				else
+					$output[ $k ] = wp_kses_post( $v );
 			}
 		}
 
@@ -157,15 +144,17 @@ class Insert_Code_Lite_Admin {
 	/**
 	 * Display field with description.
 	 * 
-	 * @since    0.1.0
+	 * @since 0.1.0
 	 */
 	public function display_field( $args = array() ) {
-		$name  = $args['name'];
-		$desc  = $args['desc'];
 		$value = get_option( 'iclp_code' );
-		$value = esc_textarea( $value[ $name ] );
 
-		echo "<textarea name='iclp_code[$name]' class='large-text code' rows='10' cols='50'>$value</textarea>";
-		echo "<p class='description'>$desc</p>";
+		// Display textarea.
+		printf( '<textarea name="iclp_code[%s]" class="large-text code" rows="10" cols="50">', $args['name'] );
+			echo esc_textarea( $value[ $args['name'] ]  );
+		echo "</textarea>";
+
+		// Display description.
+		printf( '<p class="">%s</p>', $args['desc'] );
 	}
 }

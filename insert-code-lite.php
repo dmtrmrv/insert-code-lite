@@ -15,8 +15,8 @@
  * @wordpress-plugin
  * Plugin Name:       Insert Code Lite
  * 
- * Description:       With Insert Code Lite you can add tracking scripts, CSS styles, meta tags or other code to your website without editing your theme.
- * Version:           0.1.1
+ * Description:       Simple way of adding custom scipts and styles to your website.
+ * Version:           0.1.2
  * Author:            Dmitry Mayorov
  * Author URI:        http://dmitrymayorov.com/
  * License:           GPL-2.0+
@@ -29,22 +29,6 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-
-/**
- * The code that runs during plugin activation.
- */
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-insert-code-lite-activator.php';
-
-/**
- * The code that runs during plugin deactivation.
- */
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-insert-code-lite-deactivator.php';
-
-/** This action is documented in includes/class-insert-code-lite-activator.php */
-register_activation_hook( __FILE__, array( 'Insert_Code_Lite_Activator', 'activate' ) );
-
-/** This action is documented in includes/class-insert-code-lite-deactivator.php */
-register_deactivation_hook( __FILE__, array( 'Insert_Code_Lite_Deactivator', 'deactivate' ) );
 
 /**
  * The core plugin class that is used to define internationalization,
