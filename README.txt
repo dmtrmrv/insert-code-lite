@@ -42,9 +42,8 @@ You don't want to put things like tracking code inside your theme because if you
 
 == Changelog ==
 
-**0.1.2**
+= 0.1.2 =
 * Minor code improvements
-* Updated translations
 
 = 0.1.1 =
 * Added Russian translation
