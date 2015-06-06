@@ -8,21 +8,19 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://dmitrymayorov.com
- * @since             0.1.0
- * @package           Insert_Code_Lite
+ * @link        http://dmitrymayorov.com
+ * @since       0.1.0
+ * @package     Insert_Code_Lite
  *
- * @wordpress-plugin
- * Plugin Name:       Insert Code Lite
- * 
- * Description:       Simple way of adding custom scipts and styles to your website.
- * Version:           0.1.2
- * Author:            Dmitry Mayorov
- * Author URI:        http://dmitrymayorov.com/
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       insert-code-lite
- * Domain Path:       /languages
+ * Plugin Name: Insert Code Lite 
+ * Description: Simple way of adding custom scipts and styles to your website.
+ * Version:     0.1.2
+ * Author:      Dmitry Mayorov
+ * Author URI:  http://dmitrymayorov.com/
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain: insert-code-lite
+ * Domain Path: /languages
  */
 
 // If this file is called directly, abort.
@@ -43,7 +41,7 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/class-insert-code-lite.php'
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    0.1.0
+ * @since 0.1.0
  */
 function run_insert_code_lite() {
 

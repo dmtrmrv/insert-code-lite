@@ -155,6 +155,6 @@ class Insert_Code_Lite_Admin {
 		echo "</textarea>";
 
 		// Display description.
-		printf( '<p class="">%s</p>', $args['desc'] );
+		printf( '<p class="desription">%s</p>', $args['desc'] );
 	}
 }

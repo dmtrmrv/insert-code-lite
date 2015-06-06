@@ -33,27 +33,27 @@ class Insert_Code_Lite {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    0.1.0
-	 * @access   protected
-	 * @var      Insert_Code_Lite_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @since  0.1.0
+	 * @access protected
+	 * @var    Insert_Code_Lite_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    0.1.0
-	 * @access   protected
-	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+	 * @since  0.1.0
+	 * @access protected
+	 * @var    string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
 	protected $plugin_name;
 
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    0.1.0
-	 * @access   protected
-	 * @var      string    $version    The current version of the plugin.
+	 * @since  0.1.0
+	 * @access protected
+	 * @var    string    $version    The current version of the plugin.
 	 */
 	protected $version;
 
@@ -64,7 +64,7 @@ class Insert_Code_Lite {
 	 * Load the dependencies, define the locale, and set the hooks for the Dashboard and
 	 * the public-facing side of the site.
 	 *
-	 * @since    0.1.0
+	 * @since 0.1.0
 	 */
 	public function __construct() {
 
@@ -91,8 +91,8 @@ class Insert_Code_Lite {
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
 	 *
-	 * @since    0.1.0
-	 * @access   private
+	 * @since  0.1.0
+	 * @access private
 	 */
 	private function load_dependencies() {
 
@@ -129,8 +129,8 @@ class Insert_Code_Lite {
 	 * Uses the Insert_Code_Lite_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
-	 * @since    0.1.0
-	 * @access   private
+	 * @since  0.1.0
+	 * @access private
 	 */
 	private function set_locale() {
 
@@ -145,8 +145,8 @@ class Insert_Code_Lite {
 	 * Register all of the hooks related to the dashboard functionality
 	 * of the plugin.
 	 *
-	 * @since    0.1.0
-	 * @access   private
+	 * @since  0.1.0
+	 * @access private
 	 */
 	private function define_admin_hooks() {
 
@@ -161,8 +161,8 @@ class Insert_Code_Lite {
 	 * Register all of the hooks related to the public-facing functionality
 	 * of the plugin.
 	 *
-	 * @since    0.1.0
-	 * @access   private
+	 * @since  0.1.0
+	 * @access private
 	 */
 	private function define_public_hooks() {
 
@@ -176,7 +176,7 @@ class Insert_Code_Lite {
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
 	 *
-	 * @since    0.1.0
+	 * @since 0.1.0
 	 */
 	public function run() {
 		$this->loader->run();
@@ -186,8 +186,8 @@ class Insert_Code_Lite {
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
 	 *
-	 * @since     0.1.0
-	 * @return    string    The name of the plugin.
+	 * @since  0.1.0
+	 * @return string The name of the plugin.
 	 */
 	public function get_plugin_name() {
 		return $this->plugin_name;
@@ -196,8 +196,8 @@ class Insert_Code_Lite {
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
-	 * @since     0.1.0
-	 * @return    Insert_Code_Lite_Loader    Orchestrates the hooks of the plugin.
+	 * @since  0.1.0
+	 * @return Insert_Code_Lite_Loader Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;
@@ -206,8 +206,8 @@ class Insert_Code_Lite {
 	/**
 	 * Retrieve the version number of the plugin.
 	 *
-	 * @since     0.1.0
-	 * @return    string    The version number of the plugin.
+	 * @since  0.1.0
+	 * @return string The version number of the plugin.
 	 */
 	public function get_version() {
 		return $this->version;

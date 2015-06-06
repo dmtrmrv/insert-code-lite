@@ -13,8 +13,6 @@ Simple way of adding custom scipts and styles to your website.
 
 Insert Code Lite adds possibility to integrate scripts, styles, or other custom code to your website. Even if you change your theme, code that you've added using this plugin will stay.
 
-Based on the Plugin API, Coding Standards, and Documentation Standards.
-
 == Installation ==
 
 = Using The WordPress Dashboard (Recommended) =
@@ -31,13 +29,6 @@ Based on the Plugin API, Coding Standards, and Documentation Standards.
 3. Click the **Browse...** button and choose `insert-code-lite.zip` in its download location on your computer.
 4. Click the **Install Now** button.
 5. Activate the plugin.
-
-= Using FTP (Not Recommended) =
-
-1. Download `insert-code-lite.zip`.
-2. Extract the `insert-code-lite` directory to your computer.
-3. Upload the `insert-code-lite` directory to your `/wp-content/plugins/` directory.
-4. Navigate to *Plugins → Installed Plugins* and activate the plugin.
 
 == Frequently Asked Questions ==
 
