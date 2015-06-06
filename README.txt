@@ -7,13 +7,11 @@ Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With Insert Code Lite you can add tracking scripts, CSS styles, meta tags or other code to your website without editing your theme.
+Simple way of adding custom scipts and styles to your website.
 
 == Description ==
 
-Insert Code Lite allows you to add custom code to your site. Tracking scripts, custom CSS styles, or custom meta tags can be easily integrated to your website using this plugin.
-
-Even if you change your theme, custom code that you've added using this plugin will be present on your site.
+Insert Code Lite adds possibility to integrate scripts, styles, or other custom code to your website. Even if you change your theme, code that you've added using this plugin will stay.
 
 Based on the Plugin API, Coding Standards, and Documentation Standards.
 
@@ -52,6 +50,10 @@ You don't want to put things like tracking code inside your theme because if you
 1. Dashboard view of the plugin. 
 
 == Changelog ==
+
+**0.1.2**
+* Minor code improvements
+* Updated translations
 
 = 0.1.1 =
 * Added Russian translation
