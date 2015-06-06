@@ -106,7 +106,7 @@ class Insert_Code_Lite_Admin {
 			'iclp_code',
 			array(
 				'name' => 'header_scripts',
-				'desc' => sprintf( _x( 'Will be printed within the %s section.', '\'head\'', '<code>' . esc_html( '<head></head>' ) . '</code>' ), 'insert-code-lite' ),
+				'desc' => sprintf( _x( 'Will be printed within the %s section.', '\'head\'', 'insert-code-lite' ), '<code>' . esc_html( '<head></head>' ) . '</code>' ),
 			)
 		);
 
@@ -118,7 +118,7 @@ class Insert_Code_Lite_Admin {
 			'iclp_code',
 			array(
 				'name' => 'footer_scripts',
-				'desc' => sprintf( _x( 'Will be printed before closing %s tag.', '\'body\'', '<code>' . esc_html( '</body>' ) . '</code>' ), 'insert-code-lite' ),
+				'desc' => sprintf( _x( 'Will be printed before closing %s tag.', '\'body\'', 'insert-code-lite' ), '<code>' . esc_html( '</body>' ) . '</code>' ),
 			)
 		);
 	}
@@ -155,6 +155,6 @@ class Insert_Code_Lite_Admin {
 		echo "</textarea>";
 
 		// Display description.
-		printf( '<p class="desription">%s</p>', $args['desc'] );
+		printf( '<p class="description">%s</p>', $args['desc'] );
 	}
 }
