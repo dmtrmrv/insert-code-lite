@@ -1,28 +1,11 @@
 module.exports = function( grunt ) {
-	grunt.initConfig( {
-		pkg: grunt.file.readJSON( 'package.json' ),
-
-		makepot: {
-			target: {
-				options: {
-					type: 'wp-plugin',
-				}
-			}
-		},
-		watch: {
-			scripts: {
-				files: [ '**/*.php' ],
-				tasks: 'makepot',
-				options: {
-					spawn: false,
-				}
+	require( 'time-grunt' )( grunt );
+	require( 'load-grunt-config' )( grunt, {
+		jitGrunt: {
+			staticMappings: {
+				'replace': 'grunt-text-replace',
+				'makepot': 'grunt-wp-i18n'
 			}
 		}
-
 	} );
-
-	grunt.loadNpmTasks( 'grunt-wp-i18n' );
-	grunt.loadNpmTasks( 'grunt-contrib-watch' );
-
-	grunt.registerTask( 'default', [ 'watch' ] );
 };
