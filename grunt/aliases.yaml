@@ -6,6 +6,10 @@ build:
   - 'copy:build'
   - 'compress'
 
+svn:
+  - 'clean:svn'
+  - 'copy:svn'
+
 release:
   - 'makepot'
   - 'replace:readme'
