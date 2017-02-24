@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -8,15 +7,15 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link        http://dmitrymayorov.com
- * @since       0.1.0
- * @package     Insert_Code_Lite
+ * @link        https://dmtrmrv.com
+ * @since 0.1.0
+ * @package     Insert Code Lite
  *
- * Plugin Name: Insert Code Lite 
+ * Plugin Name: Insert Code Lite
  * Description: Simple way of adding custom scipts and styles to your website.
  * Version:     0.1.2
  * Author:      Dmitry Mayorov
- * Author URI:  http://dmitrymayorov.com/
+ * Author URI:  https://dmtrmrv.com/
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: insert-code-lite
@@ -44,9 +43,8 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/class-insert-code-lite.php'
  * @since 0.1.0
  */
 function run_insert_code_lite() {
-
 	$plugin = new Insert_Code_Lite();
 	$plugin->run();
-
 }
+
 run_insert_code_lite();

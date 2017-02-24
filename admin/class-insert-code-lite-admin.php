@@ -1,13 +1,12 @@
 <?php
-
 /**
  * The dashboard-specific functionality of the plugin.
  *
- * @link       http://dmitrymayorov.com
+ * @link       https://dmtrmrv.com
  * @since      0.1.0
  *
- * @package    Insert_Code_Lite
- * @subpackage Insert_Code_Lite/admin
+ * @package    Insert Code Lite
+ * @subpackage Insert Code Lite/admin
  */
 
 /**
@@ -16,16 +15,15 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the dashboard-specific stylesheet and JavaScript.
  *
- * @package    Insert_Code_Lite
- * @subpackage Insert_Code_Lite/admin
+ * @package    Insert Code Lite
+ * @subpackage Insert Code Lite/admin
  * @author     Dmitry Mayorov
  */
 class Insert_Code_Lite_Admin {
-
 	/**
 	 * The ID of this plugin.
 	 *
-	 * @since 0.1.0
+	 * @since  0.1.0
 	 * @access private
 	 * @var    string  $name The ID of this plugin.
 	 */
@@ -44,14 +42,12 @@ class Insert_Code_Lite_Admin {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since 0.1.0
-	 * @var   string $name    The name of this plugin.
-	 * @var   string $version The version of this plugin.
+	 * @param string $name    The name of this plugin.
+	 * @param string $version The version of this plugin.
 	 */
 	public function __construct( $name, $version ) {
-
 		$this->name = $name;
 		$this->version = $version;
-
 	}
 
 	/**
@@ -69,10 +65,10 @@ class Insert_Code_Lite_Admin {
 			array( $this, 'render_plugin_admin_page' )
 		);
 	}
-	
+
 	/**
 	 * Render admin page.
-	 * 
+	 *
 	 * @since 0.1.0
 	 */
 	public function render_plugin_admin_page() {
@@ -81,7 +77,7 @@ class Insert_Code_Lite_Admin {
 
 	/**
 	 * Initialize admin page.
-	 * 
+	 *
 	 * @since 0.1.0
 	 */
 	public function admin_init() {
@@ -90,51 +86,53 @@ class Insert_Code_Lite_Admin {
 			'iclp_code',
 			array( $this, 'sanitize' )
 		);
-		
+
 		add_settings_section(
 			'iclp_code',
 			'',
 			'__return_false',
 			'iclp_code'
 		);
-		
+
 		add_settings_field(
 			'header_scripts',
 			_x( 'Header', 'Meaning \'head\' section of the site.', 'insert-code-lite' ),
-			array( $this, 'display_field' ), 
-			'iclp_code', 
+			array( $this, 'display_field' ),
+			'iclp_code',
 			'iclp_code',
 			array(
 				'name' => 'header_scripts',
-				'desc' => sprintf( _x( 'Will be printed within the %s section.', '\'head\'', 'insert-code-lite' ), '<code>' . esc_html( '<head></head>' ) . '</code>' ),
+				'desc' => 'Will be printed within the <head></head> tag.',
 			)
 		);
 
 		add_settings_field(
 			'footer_scripts',
 			_x( 'Footer', 'Meaning the section of the site before closing \'body\' tag.', 'insert-code-lite' ),
-			array( $this, 'display_field' ), 
+			array( $this, 'display_field' ),
 			'iclp_code',
 			'iclp_code',
 			array(
 				'name' => 'footer_scripts',
-				'desc' => sprintf( _x( 'Will be printed before closing %s tag.', '\'body\'', 'insert-code-lite' ), '<code>' . esc_html( '</body>' ) . '</code>' ),
+				'desc' => 'Will be printed before the closing </body> tag.',
 			)
 		);
 	}
 
 	/**
 	 * Sanitize option value.
-	 * 
+	 *
 	 * @since 0.1.0
+	 * @param string $input Potentially dangerous data.
 	 */
 	public function sanitize( $input ) {
 		if ( isset( $input ) && is_array( $input ) ) {
 			foreach ( $input as $k => $v ) {
-				if ( current_user_can( 'unfiltered_html' ) )
+				if ( current_user_can( 'unfiltered_html' ) ) {
 					$output[ $k ] = $v;
-				else
+				} else {
 					$output[ $k ] = wp_kses_post( $v );
+				}
 			}
 		}
 
@@ -143,18 +141,19 @@ class Insert_Code_Lite_Admin {
 
 	/**
 	 * Display field with description.
-	 * 
+	 *
 	 * @since 0.1.0
+	 * @param string $args Arguments for displaying the field.
 	 */
 	public function display_field( $args = array() ) {
 		$value = get_option( 'iclp_code' );
 
 		// Display textarea.
-		printf( '<textarea name="iclp_code[%s]" class="large-text code" rows="10" cols="50">', $args['name'] );
-			echo esc_textarea( $value[ $args['name'] ]  );
-		echo "</textarea>";
+		printf( '<textarea name="iclp_code[%s]" class="large-text code" rows="10" cols="50">', esc_attr( $args['name'] ) );
+			echo esc_textarea( $value[ $args['name'] ] );
+		echo '</textarea>';
 
 		// Display description.
-		printf( '<p class="description">%s</p>', $args['desc'] );
+		printf( '<p class="description">%s</p>', esc_html( $args['desc'] ) );
 	}
 }
