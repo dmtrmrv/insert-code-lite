@@ -2,20 +2,18 @@
 Contributors: iamdmitrymayorov
 Tags: tracking, tracking code, counter, admin, javascript, css, html, html5, google, analytics
 Requires at least: 3.9.2
-Tested up to: 4.2
+Tested up to: 4.7
 Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simple way of adding custom scipts and styles to your website.
+Insert Code Lite lets you add scripts, styles, and other custom code to your website.
 
 == Description ==
 
-Insert Code Lite adds possibility to integrate scripts, styles, or other custom code to your website. Even if you change your theme, code that you've added using this plugin will stay.
+With this plugin you can safely change your theme without worrying to loose the code you've added.
 
 == Installation ==
-
-= Using The WordPress Dashboard (Recommended) =
 
 1. Navigate to *Plugins → Add New* from within the WordPress Dashboard.
 2. Search for `insert-code-lite`.
@@ -38,16 +36,25 @@ You don't want to put things like tracking code inside your theme because if you
 
 == Screenshots ==
 
-1. Dashboard view of the plugin. 
+1. Dashboard view of the plugin.
 
 == Changelog ==
 
+= 0.1.3 =
+
+* Updated README.
+* Added minor code improvements.
+* Removed Russian translation.
+
 = 0.1.2 =
-* Minor code improvements
+
+* Added minor code improvements.
 
 = 0.1.1 =
-* Added Russian translation
-* Minor code improvements
+
+* Added Russian translation.
+* Minor code improvements.
 
 = 0.1.0 =
-* Initial Release
+
+* Initial Release.
