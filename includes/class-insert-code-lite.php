@@ -67,7 +67,7 @@ class Insert_Code_Lite {
 	 */
 	public function __construct() {
 		$this->plugin_name = 'insert-code-lite';
-		$this->version = '0.1.2';
+		$this->version = '0.1.3';
 
 		$this->load_dependencies();
 		$this->set_locale();
