@@ -4,7 +4,7 @@ Insert Code Lite lets you add scripts, styles, and other custom code to your web
 
 This is a development version of a plugin. You can install production version directly from WordPress.org [repository](https://wordpress.org/plugins/insert-code-lite/) or from within your WordPress Dashboard.
 
-##Changelog
+## Changelog
 
 **0.1.4**
 
