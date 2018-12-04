@@ -13,7 +13,7 @@
  *
  * Plugin Name: Insert Code Lite
  * Description: Simple way of adding custom scipts and styles to your website.
- * Version:     0.1.3
+ * Version:     0.1.4
  * Author:      Dmitry Mayorov
  * Author URI:  https://dmtrmrv.com/
  * License:     GPL-2.0+

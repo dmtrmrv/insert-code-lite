@@ -6,6 +6,10 @@ This is a development version of a plugin. You can install production version di
 
 ###Changelog###
 
+**0.1.4**
+
+* Tested up to WordPress 5.0
+
 **0.1.3**
 
 * Updated README.
