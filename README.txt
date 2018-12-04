@@ -40,7 +40,7 @@ You don't want to put things like tracking code inside your theme because if you
 
 == Changelog ==
 
-= 0.1.3 =
+= 0.1.4 =
 
 * Tested up to WordPress 5.0
 
