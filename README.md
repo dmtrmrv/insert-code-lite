@@ -8,7 +8,7 @@ This is a development version of a plugin. You can install production version di
 
 **0.1.4**
 
-* Tested up to WordPress 5.0
+* Tested up to WordPress 5.0.
 
 **0.1.3**
 
