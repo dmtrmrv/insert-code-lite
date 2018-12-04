@@ -42,6 +42,10 @@ You don't want to put things like tracking code inside your theme because if you
 
 = 0.1.3 =
 
+* Tested up to WordPress 5.0
+
+= 0.1.3 =
+
 * Updated README.
 * Added minor code improvements.
 * Removed Russian translation.
